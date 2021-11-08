@@ -1,6 +1,6 @@
 package pages;
 
-public class CalculatorPage {
+public class  CalculatorPage {
 
     public int additionOfNumbers(int a, int b) {
         return a + b;
