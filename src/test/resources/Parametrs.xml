@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Test suite" parallel="classes">
+    <test name="test 1">
+        <groups>
+            <run>
+                <include name="Parametrs"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.DivisionTest"/>
+            <class name="tests.AdditionTest"/>
+            <class name="tests.MultiplicationTest"/>
+            <class name="tests.SubtractionTest"/>
+            <parameter name="firstNumberDiv" value="12"></parameter>
+            <parameter name="secondNumberDiv" value="3"></parameter>
+            <parameter name="actualResultDiv" value="4"></parameter>
+            <parameter name="firstNumberAdd" value="12"></parameter>
+            <parameter name="secondNumberAdd" value="3"></parameter>
+            <parameter name="actualResultAdd" value="15"></parameter>
+            <parameter name="firstNumberMul" value="12"></parameter>
+            <parameter name="secondNumberMul" value="3"></parameter>
+            <parameter name="actualResultMul" value="36"></parameter>
+            <parameter name="firstNumberSub" value="12"></parameter>
+            <parameter name="secondNumberSub" value="3"></parameter>
+            <parameter name="actualResultSub" value="9"></parameter>
+        </classes>
+    </test>
+</suite>
